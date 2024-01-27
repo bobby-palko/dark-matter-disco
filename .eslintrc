@@ -1,0 +1,4 @@
+{
+  "extends": ["wesbos/typescript"],
+  "ignorePatterns": ["gatsby-browser.js", "postcss.config.js", "tailwind.config.js"]
+}
