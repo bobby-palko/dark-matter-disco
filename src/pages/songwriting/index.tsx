@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import type { HeadFC, PageProps } from 'gatsby';
+import { Heading, Link, List } from '../../components';
 
 const SongwritingIndexPage: React.FC<PageProps> = () => (
   <main>
-    <h1>Songwriting Theory</h1>
-    <ul>
+    <Heading>Songwriting Theory</Heading>
+    <List>
       <li>
         <Link to="/songwriting/pov">Point of View</Link>
       </li>
@@ -45,7 +45,7 @@ const SongwritingIndexPage: React.FC<PageProps> = () => (
       <li>
         <Link to="/songwriting/body-language">Body Language</Link>
       </li>
-    </ul>
+    </List>
   </main>
 );
 

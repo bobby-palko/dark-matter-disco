@@ -1,49 +1,50 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
+import { Heading, List } from '../../components';
 
 const SongwritingIndexPage: React.FC<PageProps> = () => (
   <main>
-    <h1 id="rule-of-prosody">Rule of Prosody</h1>
+    <Heading>Rule of Prosody</Heading>
     <p>
       <em>Unity</em>
     </p>
-    <ul>
+    <List>
       <li>
         Everything fits together, works together
-        <ul>
+        <List>
           <li>express central emotion</li>
           <li>all there for the same reason</li>
-        </ul>
+        </List>
       </li>
       <li>Common sense, duh!</li>
       <li>Rule of all art basically</li>
       <li>
         Stable vs unstable ideas (like a fact vs something's missing)
-        <ul>
+        <List>
           <li>“Im so grateful that you're in my life” (stable)</li>
           <li>
             “I wish you here!” (sense of longing, something not there….unstable)
           </li>
           <li>
             Tone of voice help create this stability or instability{' '}
-            <ul>
+            <List>
               <li>
                 “I'm so grateful that you're in my life….but..” (unstable!)
               </li>
-            </ul>
+            </List>
           </li>
           <li>
             Unusual for entire song to stay one way
-            <ul>
+            <List>
               <li>
                 Common for song to go from stable to unstable, or other way, or
                 both!
               </li>
-            </ul>
+            </List>
           </li>
-        </ul>
+        </List>
       </li>
-    </ul>
+    </List>
   </main>
 );
 

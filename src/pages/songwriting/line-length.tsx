@@ -1,10 +1,11 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
+import { Heading, List } from '../../components';
 
-const SongwritingIndexPage: React.FC<PageProps> = () => (
+const SongwritingLineLengthPage: React.FC<PageProps> = () => (
   <main>
-    <h1 id="line-length">Line Length</h1>
-    <ul>
+    <Heading>Line Length</Heading>
+    <List>
       <li>two lines match length = stable. we're done, we can move on</li>
       <li>
         shorter 2nd line helps move forward = unstable. OMG WE GOTTA GO NOW
@@ -15,24 +16,24 @@ const SongwritingIndexPage: React.FC<PageProps> = () => (
       <li>
         longer 2nd line is still instability, but it creates the spotlight, not
         quite the moving forward part
-        <ul>
+        <List>
           <li>
             balanced the first line then added extra - doesn't feel really
             unstable
           </li>
-        </ul>
+        </List>
       </li>
       <li>
         Effects of line length
-        <ul>
+        <List>
           <li>
             can create an “emotional commentary”
-            <ul>
+            <List>
               <li>
                 shortening last line leaves longing, cause you were expecting it
                 to be the same as the others
               </li>
-            </ul>
+            </List>
           </li>
           <li>breaking expectations to create that unstable feeling</li>
           <li>
@@ -46,12 +47,12 @@ const SongwritingIndexPage: React.FC<PageProps> = () => (
             create contrast between sections (long lines in verse, short in
             chorus)
           </li>
-        </ul>
+        </List>
       </li>
-    </ul>
+    </List>
   </main>
 );
 
-export default SongwritingIndexPage;
+export default SongwritingLineLengthPage;
 
 export const Head: HeadFC = () => <title>Songwriting Theory</title>;

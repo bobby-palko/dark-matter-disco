@@ -1,123 +1,123 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import type { HeadFC, PageProps } from 'gatsby';
+import { Heading, Link, List } from '../../components';
 
-const SongwritingIndexPage: React.FC<PageProps> = () => (
+const SongwritingMovePage: React.FC<PageProps> = () => (
   <main>
-    <h1 id="making-it-move">Making it Move</h1>
+    <Heading>Making it Move</Heading>
     <p>
       <em>rhythm of lines</em>
     </p>
-    <ul>
+    <List>
       <li>
         <Link to="/songwriting/line-length">Line Length</Link> isn't about just
         syllables, it's determined by the number of stressed syllables
-        <ul>
+        <List>
           <li>
             we tend to connect words; speak flowingly, not stopping completely
             between words (stopping between words gets boring, irritating, feels
             robotic)
-            <ul>
+            <List>
               <li>create layers with pitch variation (stressed syllables!)</li>
-            </ul>
+            </List>
           </li>
           <li>
             Multi-syllable words
-            <ul>
+            <List>
               <li>
                 stress (MUL ti SYL la BLE)
-                <ul>
+                <List>
                   <li>
                     SYL is “highest pitch,” therefore is the primary stress
                   </li>
                   <li>MUL, BLE - secondary stress</li>
                   <li>primary stress should have strong position in the bar</li>
                   <li>have a “melody”</li>
-                </ul>
+                </List>
               </li>
               <li>
                 can be stressed differently depending on region as well
-                <ul>
+                <List>
                   <li>(north, poLICE - south accent, POlice)</li>
-                </ul>
+                </List>
               </li>
-            </ul>
+            </List>
           </li>
           <li>
             One syllable words
-            <ul>
+            <List>
               <li>
                 not stressed/unstressed by melody, but by function
-                <ul>
+                <List>
                   <li>
                     meaning function
-                    <ul>
+                    <List>
                       <li>
                         semantic/cognitive, carries a meaning
-                        <ul>
+                        <List>
                           <li>nouns, verbs, adj, adv</li>
                           <li>always stressed</li>
-                        </ul>
+                        </List>
                       </li>
-                    </ul>
+                    </List>
                   </li>
                   <li>
                     grammatical/syntactic function
-                    <ul>
+                    <List>
                       <li>
                         aide and abet meaning functions
-                        <ul>
+                        <List>
                           <li>
                             articles (a, than, the), conjunction (and, but, yet,
                             or), prepositions (in, on, at, before), personal
                             pronouns (i, you, he, she, it)
-                            <ul>
+                            <List>
                               <li>
                                 try to avoid prepositions catching the
                                 spotlight, they have a tendency to be in the
                                 spotlight
                               </li>
-                            </ul>
+                            </List>
                           </li>
                           <li>
                             not stressed unless providing a contrast
-                            <ul>
+                            <List>
                               <li>“throw the ball To me not AT me”</li>
-                            </ul>
+                            </List>
                           </li>
-                        </ul>
+                        </List>
                       </li>
                       <li>lower in pitch, because they're not stressed</li>
-                    </ul>
+                    </List>
                   </li>
-                </ul>
+                </List>
               </li>
-            </ul>
+            </List>
           </li>
-        </ul>
+        </List>
       </li>
       <li>
         start forming patterns of stressed and unstressed syllables
-        <ul>
+        <List>
           <li>organize lines in rhythm </li>
           <li>prepares lines for lyrics, and melodic rhythm</li>
-        </ul>
+        </List>
       </li>
       <li>
         preserve the natural state of the language!!
-        <ul>
+        <List>
           <li>one of the primary jobs of a songwriter</li>
           <li>don't place stress on naturally unstressed syllable</li>
-        </ul>
+        </List>
       </li>
       <li>
         one bar of 4/4 time, 4 quarter notes per bar
-        <ul>
+        <List>
           <li>
             each bar is strong on down beat, weak second, mid third, weak fourth
-            <ul>
+            <List>
               <li>ONE, two, Three, four</li>
-            </ul>
+            </List>
           </li>
           <li>
             place stressed syllables on strong beats, stressed positions of the
@@ -126,20 +126,20 @@ const SongwritingIndexPage: React.FC<PageProps> = () => (
           <li>strong beats of the bar are spotlights, use them well!</li>
           <li>
             placing words behind (or in front of) the beat to diminish them
-            <ul>
+            <List>
               <li>
                 good for the grammatical function words that you don't want to
                 draw attention to
               </li>
-            </ul>
+            </List>
           </li>
           <li>takes the air out of the tires of the song</li>
-        </ul>
+        </List>
       </li>
-    </ul>
+    </List>
   </main>
 );
 
-export default SongwritingIndexPage;
+export default SongwritingMovePage;
 
 export const Head: HeadFC = () => <title>Songwriting Theory</title>;
