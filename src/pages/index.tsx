@@ -10,7 +10,7 @@ const pageStyles = {
   fontFamily: 'Roboto, sans-serif, serif',
 };
 const headingStyles = {
-  fontSize: '64px'
+  fontSize: '64px',
 };
 
 const IndexPage: React.FC<PageProps> = () => (

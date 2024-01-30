@@ -1,43 +1,44 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
+import { Heading, List } from '../../components';
 
-const SongwritingIndexPage: React.FC<PageProps> = () => (
+const SongwritingNumberOfLinesPage: React.FC<PageProps> = () => (
   <main>
-    <h1 id="number-of-lines">Number of Lines</h1>
-    <ul>
+    <Heading>Number of Lines</Heading>
+    <List>
       <li>
         every section of song will have some number of lines, duh
-        <ul>
+        <List>
           <li>
             even number feels stable
-            <ul>
+            <List>
               <li>4 is a very stable amount</li>
-            </ul>
+            </List>
           </li>
           <li>
             odd feels unstable, unresolved{' '}
-            <ul>
+            <List>
               <li>
                 3 feels like it needs to move forward, “one line is missing”
               </li>
-            </ul>
+            </List>
           </li>
-        </ul>
+        </List>
       </li>
       <li>
         number of lines creates feeling all by itself
-        <ul>
+        <List>
           <li>can be used to support feelings talking about</li>
           <li>talk in a rhythm to get feeling (like to a simple loop)</li>
-        </ul>
+        </List>
       </li>
       <li>
         Effects of number of lines
-        <ul>
+        <List>
           <li>actually think about these things rather than let it happen</li>
           <li>
             create “spotlights”
-            <ul>
+            <List>
               <li>
                 resolving position is a brighter spotlight (position of
                 stability, affirming expectations)
@@ -45,38 +46,38 @@ const SongwritingIndexPage: React.FC<PageProps> = () => (
               <li>
                 unexpected areas (verse 4 lines, verse 4 lines, verse 5 LINES)
               </li>
-            </ul>
+            </List>
           </li>
           <li>
             create stopping motion/suggesting forward motion
-            <ul>
-              <li>even = I’m done. stop motion</li>
+            <List>
+              <li>even = I'm done. stop motion</li>
               <li>
-                odd = let’s keep going? move forward
-                <ul>
+                odd = let's keep going? move forward
+                <List>
                   <li>
                     odd typically used in section made to create motion
-                    <ul>
+                    <List>
                       <li>pre chorus, bridge, etc</li>
-                    </ul>
+                    </List>
                   </li>
-                </ul>
+                </List>
               </li>
-            </ul>
+            </List>
           </li>
           <li>
             create contrast between sections
-            <ul>
+            <List>
               <li>it's not a big player in creating contrast, but is useful</li>
               <li>creates spotlight</li>
-            </ul>
+            </List>
           </li>
-        </ul>
+        </List>
       </li>
-    </ul>
+    </List>
   </main>
 );
 
-export default SongwritingIndexPage;
+export default SongwritingNumberOfLinesPage;
 
 export const Head: HeadFC = () => <title>Songwriting Theory</title>;
