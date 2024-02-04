@@ -1,7 +1,11 @@
 import * as React from 'react';
 
 const Card: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <div className="w-full p-4 mb-4 bg-slate-700 shadow-md">{children}</div>
+  <div className="rounded-3xl p-px my-4 bg-gradient-to-r from-primary to-secondary">
+    <div className="p-10 bg-neutral-card-dark rounded-[calc(1.5rem-1px)]">
+      {children}
+    </div>
+  </div>
 );
 
 export default Card;

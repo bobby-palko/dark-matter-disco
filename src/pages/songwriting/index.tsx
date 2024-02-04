@@ -1,10 +1,12 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
-import { Heading, Link, List } from '../../components';
+import { GradientText, Heading, Link, List } from '../../components';
 
 const SongwritingIndexPage: React.FC<PageProps> = () => (
   <main>
-    <Heading>Songwriting Theory</Heading>
+    <Heading>
+      <GradientText>Songwriting Theory</GradientText>
+    </Heading>
     <List>
       <li>
         <Link to="/songwriting/pov">Point of View</Link>

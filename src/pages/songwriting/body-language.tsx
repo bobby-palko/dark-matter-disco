@@ -1,10 +1,12 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
-import { Card, Heading, List } from '../../components';
+import { Card, GradientText, Heading, List } from '../../components';
 
 const SongwritingBodyLanguagePage: React.FC<PageProps> = () => (
   <main>
-    <Heading>Body Language</Heading>
+    <Heading>
+      <GradientText>Body Language</GradientText>
+    </Heading>
     <p>How do we convey body language in a song?</p>
     <Card>
       <Heading headingType="section">Phrasing</Heading>
