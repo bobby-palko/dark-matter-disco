@@ -1,4 +1,5 @@
 import * as React from 'react';
+import GradientText from './GradientText';
 
 interface HeadingProps extends React.PropsWithChildren {
   headingType?: 'page' | 'section' | 'sub-section' | 'overline'; // h1, h2, h3, h4 respectively
@@ -11,7 +12,11 @@ const Heading: React.FC<HeadingProps> = ({
   headingType = 'page',
 }) => {
   if (headingType === 'page') {
-    return <h1 className={`${sharedStyles} text-5xl`}>{children}</h1>;
+    return (
+      <h1 className={`${sharedStyles} text-5xl`}>
+        <GradientText>{children}</GradientText>
+      </h1>
+    );
   }
   if (headingType === 'section') {
     return <h2 className={`${sharedStyles} text-3xl`}>{children}</h2>;

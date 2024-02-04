@@ -1,21 +1,12 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
-
-const pageStyles = {
-  backgroundColor: '#121212',
-  color: '#66c2e3',
-  width: '100vw',
-  height: '100vh',
-  padding: 96,
-  fontFamily: 'Roboto, sans-serif, serif',
-};
-const headingStyles = {
-  fontSize: '64px',
-};
+import { Heading } from '../components';
 
 const IndexPage: React.FC<PageProps> = () => (
-  <main style={pageStyles}>
-    <h1 style={headingStyles}>Dark Matter Disco 🪩</h1>
+  <main className="h-lvh w-lvh bg-neutral-dark p-20">
+    <div className="m-auto">
+      <Heading>Dark Matter Disco</Heading>
+    </div>
   </main>
 );
 
